@@ -1,0 +1,76 @@
+name: grocery_shop_app
+description: "A new Flutter project."
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  provider: ^6.0.3
+  
+  # MongoDB for database interactions
+  mongo_dart: ^0.10.3
+
+  # For sending emails via SMTP
+  mailer: ^6.1.2
+  
+  # Fonts and Icons
+  google_fonts: ^6.2.1
+
+  # For whatsapp icon
+  font_awesome_flutter: ^10.7.0
+
+  # For launch whatsapp
+  url_launcher: ^6.3.0
+
+  # Networking (if you need to interact with a REST API or similar)
+  http: ^1.2.2
+  flutter_localization: ^0.2.1
+  logging: ^1.0.2
+  flutter_timezone: ^3.0.0
+  timezone: ^0.7.0
+  flutter_launcher_icons: ^0.13.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/logo.png"
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/icon/logo.png 
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+
+    - family: RobotoCondensed
+      fonts: 
+        - asset: assets/fonts/RobotoCondensed-Bold.ttf
+        - asset: assets/fonts/RobotoCondensed-BoldItalic.ttf
+        - asset: assets/fonts/RobotoCondensed-Italic.ttf
+        - asset: assets/fonts/RobotoCondensed-Regular.ttf
+
+          weight: 700
+
+    - family:  MyApp
+      fonts:
+       - asset: assets/fonts/MyApp.ttf
